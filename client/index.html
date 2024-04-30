@@ -9,5 +9,28 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyBR1bYAFCqnBLBIY9S75lvLWNASDjtH2YY",
+        authDomain: "epic-blog-mern-stack.firebaseapp.com",
+        projectId: "epic-blog-mern-stack",
+        storageBucket: "epic-blog-mern-stack.appspot.com",
+        messagingSenderId: "85191154520",
+        appId: "1:85191154520:web:840d6ae3a63ba76723e32d",
+        measurementId: "G-NGH9GRVVDD"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </body>
 </html>

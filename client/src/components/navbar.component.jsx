@@ -113,6 +113,13 @@ const Navbar = () =>{
                     
 
                 </div>
+                <style>{`
+        /* Add your CSS styles here */
+        .navbar{
+            background-color: #2F4F4F;
+        }
+        
+      `}</style>
             </nav>
             <Outlet/>
         </>

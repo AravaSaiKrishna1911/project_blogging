@@ -11,6 +11,7 @@ import  {ManagePublishedBlogCard, ManageDraftBlogPost } from '../components/mana
 import LoadMoreDataBtn from '../components/load-more.component'
 import { useSearchParams } from 'react-router-dom'
 const ManageBlog = () => {
+    
     const [blogs, setBlogs] = useState(null)
     const [drafts, setDrafts] = useState(null)
     const [query, setQuery] = useState('')
